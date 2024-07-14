@@ -1,0 +1,828 @@
+/* HERO */
+
+#home-hero {
+    background-color: var(--blue);
+    color: var(--white);
+    min-height: 745px;
+    padding-top: 15vh
+}
+
+#home-hero h1 strong {
+    color: var(--cerulean);
+}
+
+#home-hero h1 {
+    padding-bottom: 31px;
+}
+
+#home-hero .hero-img {
+    width: 100%;
+    max-width: 606px;
+    margin: auto;
+}
+
+#home-hero .col-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-ctas {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.button-unabled {
+    filter: grayscale(1);
+    cursor: not-allowed;
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-unabled::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+.button-analog {
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-analog:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.button-analog-circle {
+    background-image: url('../imgs/btn-circle.svg');
+    width: 53px;
+    height: 67px;
+}
+
+.button-analog-circle img {
+    height: 20px;
+}
+
+.button-analog-long {
+    width: 160px;
+    height: 67px;
+}
+
+.button-analog:focus {
+    transition: ease-in-out;
+    transition: 0.3s;
+    transform: translateY(5px);
+}
+
+.button-blue {
+    background-image: url('../imgs/bluebtn.svg');
+}
+
+.button-red {
+    background-image: url('../imgs/red_btn.svg');
+}
+
+/* RANK */
+
+.ranks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 3rem;
+}
+
+.rank-container {
+    position: relative;
+}
+
+.rank-data {
+    text-align: center;
+}
+
+.rank-data p {
+    color: var(--cerulean);
+    font-size: 24px;
+    margin-top: 1rem;
+}
+
+.rank-data h3 {
+    font-family: "Rubik";
+}
+
+.rank-image img {
+    width: 100%;
+}
+
+.rank-left {
+    margin-top: 8rem;
+}
+
+.trump-rank img {
+    width: 512px;
+}
+
+.rank-1::after {
+    content: '';
+    display: block;
+    background: url(../imgs/rank1_line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 372px;
+    height: 113px;
+    position: absolute;
+    bottom: 231px;
+    left: 140px;
+    z-index: -10;
+}
+
+.rank-2::after {
+    content: '';
+    display: block;
+    background: url(../imgs/rank1_line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 479px;
+    height: 127px;
+    position: absolute;
+    bottom: 0;
+    left: -350px;
+    z-index: -10;
+    transform: rotate(131deg);
+}
+
+.rank-3::after {
+    content: '';
+    display: block;
+    background: url(../imgs/rank1_line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 372px;
+    height: 113px;
+    position: absolute;
+    bottom: 231px;
+    left: 140px;
+    z-index: -10;
+}
+
+.rank-4::after {
+    content: '';
+    display: block;
+    background: url(../imgs/diagonalLineRank.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 217px;
+    height: 388px;
+    position: absolute;
+    bottom: -230px;
+    left: 142px;
+    z-index: -10;
+    transform: rotate(13deg);
+}
+
+/* TOKENOMICS */
+
+#tokenomics {
+    background-color: var(--navy);
+    color: white;
+    padding-top: 90px;
+    padding-bottom: 105px;
+}
+
+#tokenomics>div {
+    position: relative !important;
+    z-index: 10;
+}
+
+#tokenomics>div::before {
+    content: '';
+    display: block;
+    background: url('../imgs/stars.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 272px;
+    height: 303px;
+    position: absolute;
+    top: -166px;
+    left: 0;
+}
+
+#tokenomics>div::after {
+    content: '';
+    display: block;
+    background: url('../imgs/stars_flipped.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 272px;
+    height: 303px;
+    position: absolute;
+    bottom: -166px;
+    right: 0;
+}
+
+#tokenomics .col-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+#tokenomics h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    z-index: 100;
+}
+
+.contract-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.copybtn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--cerulean);
+    border-radius: 50px;
+    border: none;
+}
+
+.copybtn:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+.copybtn img {
+    height: 23px;
+    width: 18px;
+}
+
+.contract-copy p,
+.contract-copy input {
+    color: var(--cerulean);
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+}
+
+.stats {
+    padding-top: 45px;
+}
+
+.stats .stat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats .stat-container .icon {
+    background-color: var(--cerulean);
+    width: 86px;
+    height: 86px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -50px;
+    z-index: 10;
+}
+
+.stats .stat-container .icon img {
+    height: 50%;
+}
+
+.stats .stat-circle {
+    background-color: var(--red);
+    width: 217px;
+    height: 217px;
+    border-radius: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats .stat-circle p {
+    font-size: 18px;
+}
+
+.stats .stat-circle span {
+    font-size: 52px;
+}
+
+.community {
+    background-color: var(--blue);
+    border-radius: 15px;
+    margin: 48px 0 90px;
+    padding: 48px;
+    text-align: center;
+}
+
+.community p {
+    font-size: 25px;
+    line-height: 42px;
+}
+
+.comunity-tagline {
+    padding-top: 25px;
+    font-family: var(--baskerville);
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.comunity-tagline strong {
+    color: var(--cerulean);
+}
+
+.roadmap {
+    position: relative;
+    padding-top: 90px;
+}
+
+.stars3 {
+    max-width: 212px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.phases {
+    column-gap: 40px;
+}
+
+.phase {
+    text-align: center;
+    border-radius: 10px;
+    padding-inline: 15px;
+    padding-top: 40px;
+    width: 25%;
+    min-height: 230px;
+    padding-bottom: 2rem;
+}
+
+.phase h3 {
+    font-size: 24px;
+    font-family: var(--rubik);
+    font-weight: normal;
+    padding-bottom: 35px;
+}
+
+.phase p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+}
+
+.phase hr {
+    margin: 10px 0;
+}
+
+#phase1 {
+    background-color: var(--blue);
+}
+
+#phase2 {
+    background-color: var(--cerulean);
+}
+
+#phase3 {
+    background-color: var(--red);
+}
+
+/* PLAY THE GAME */
+
+#play {
+    background-color: var(--blue);
+    overflow-x: clip;
+}
+
+#play>div {
+    position: relative;
+}
+
+#play>div::before {
+    content: '';
+    display: block;
+    background: url('../imgs/eagle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 311px;
+    height: 235px;
+    position: absolute;
+    top: -193px;
+    left: 0;
+}
+
+#play h2 {
+    line-height: 58px;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+}
+
+#play h2 strong {
+    color: var(--cerulean);
+}
+
+#play .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    width: 100%;
+}
+
+#play .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#download-ctas {
+    position: relative;
+    padding: 65px 0 75px;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+#play #download-ctas::before,
+#play #download-ctas::after {
+    content: '';
+    display: block;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 496px;
+    height: 635px;
+    position: absolute;
+    z-index: 10;
+}
+
+#play #download-ctas::before {
+    background: url('../imgs/hilary.svg');
+    left: -205px;
+    bottom: -193px;
+}
+
+#play #download-ctas::after {
+    background: url('../imgs/biden.svg');
+    right: -174px;
+    width: 473px;
+    bottom: -195px;
+}
+
+.donwload-app {
+    width: 250px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.comingsoon img {
+    opacity: 0.7;
+}
+
+.comingsoon::before {
+    content: "Coming Soon!";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000f24;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: var(--rubik);
+    opacity: 1;
+}
+
+/* MAKE MEMES GREAT AGAIN */
+
+#mmga {
+    background-color: var(--red);
+    z-index: 100;
+    position: relative;
+    color: white;
+    text-align: center;
+    background-image: url('../imgs/flag.svg');
+    background-repeat: no-repeat;
+    background-position: 55% 700%;
+    padding-bottom: 262px;
+    background-size: 1128px 557px;
+}
+
+#mmga .stars3 {
+    top: 90px;
+}
+
+#mmga>div {
+    padding-top: 187px;
+}
+
+#mmga h3 {
+    font-family: var(--rubik);
+    font-size: 28px;
+    padding-top: 45px;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1260px) {
+    #tokenomics>div::before {
+        width: 172px;
+        height: 192px;
+        top: -145px;
+    }
+    #tokenomics>div::after {
+        display: none;
+    }
+    #play>div::before {
+        width: 211px;
+        height: 163px;
+        top: -100px;
+    }
+    #download-ctas {
+        padding-top: 150px;
+    }
+    #play #download-ctas::before {
+        width: 304px;
+        height: 308px;
+        left: -123px;
+        top: 21px;
+    }
+    #play #download-ctas::after {
+        width: 288px;
+        height: 399px;
+        right: -112px;
+        bottom: -107px;
+    }
+}
+
+@media (max-width: 810px) {
+    #home-hero>.col-container {
+        flex-direction: column-reverse;
+    }
+    #home-hero {
+        padding-bottom: 55px;
+    }
+    .phase {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .phase p {
+        padding-inline: 10px;
+    }
+    .community {
+        padding: 48px 0
+    }
+    .community p {
+        font-size: 20px;
+        padding: 0 10px
+    }
+    .contract-copy {
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+    #play #download-ctas::before {
+        top: 100px;
+    }
+    #mmga {
+        background-position: 48% 1800%;
+    }
+}
+
+@media (max-width: 780px) {
+    .menu-desktop {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    #download-ctas {
+        padding-top: 56px;
+        padding-bottom: 250px;
+    }
+    #play #download-ctas::before {
+        width: 260px;
+        height: 332px;
+        right: -44px;
+        top: 233px;
+    }
+    #play #download-ctas::after {
+        width: 200px;
+        height: 332px;
+        right: -44px;
+        bottom: -88px;
+    }
+    .rank-image img {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .rank-1::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -288px;
+        left: 214px;
+        z-index: -10;
+        transform: rotate(13deg);
+        opacity: 0.2;
+    }
+    .rank-2::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -288px;
+        left: 214px;
+        z-index: -10;
+        transform: scaleX(-1) rotate(13deg);
+        opacity: 0.2;
+    }
+    .rank-3::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -288px;
+        left: 214px;
+        z-index: -10;
+        transform: rotate(13deg);
+        opacity: 0.2;
+    }
+    .trump-rank {
+        position: relative;
+    }
+    .trump-rank::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -288px;
+        left: 214px;
+        z-index: -10;
+        transform: scaleX(-1) rotate(40deg);
+        opacity: 0.2;
+    }
+    .rank-4::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -288px;
+        left: 214px;
+        z-index: -10;
+        transform: rotate(13deg);
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 431px) {
+    .trump-rank img {
+        width: 350px;
+    }
+    .rank-left {
+        margin-top: 0;
+    }
+    #mmga {
+        background-position: 48% 200%;
+        background-size: 472px 461px
+    }
+    body>section>div {
+        max-width: 335px !important;
+        margin: auto;
+        padding-inline: 20px;
+    }
+    .rank-1::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -213px;
+        left: 58px;
+        z-index: -10;
+        transform: rotate(13deg);
+        opacity: 0.2;
+    }
+    .rank-2::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -213px;
+        left: 58px;
+        z-index: -10;
+        transform: scaleX(-1) rotate(13deg);
+        opacity: 0.2;
+    }
+    .rank-3::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -213px;
+        left: 58px;
+        z-index: -10;
+        transform: rotate(13deg);
+        opacity: 0.2;
+    }
+    .trump-rank {
+        position: relative;
+    }
+    .trump-rank::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -213px;
+        left: 58px;
+        z-index: -10;
+        transform: scaleX(-1) rotate(40deg);
+        opacity: 0.2;
+    }
+    .rank-4::after {
+        content: '';
+        display: block;
+        background: url(../imgs/diagonalLineRank.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 217px;
+        height: 388px;
+        position: absolute;
+        bottom: -213px;
+        left: 58px;
+        z-index: -10;
+        transform: rotate(13deg);
+        opacity: 0.2;
+    }
+}
